@@ -60,6 +60,7 @@ a:hover {
 .circle {
     float: left;
     filter: blur(70px);
+    -webkit-filter: blur(70px);
 }
 
 #circular-color-1 {
@@ -125,5 +126,10 @@ a:hover {
 }
 .text {
     width: 80%;
+}
+#circular-color-5 {
+    width: 800px;
+    height: 800px;
+    bottom: 750px;
 }
 }
