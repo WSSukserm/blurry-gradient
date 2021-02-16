@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(230, 230, 228, 0.3);
+}
+
+.gradient-container {   
+    border-radius: 20px;
+    width: 512px;
+    height: 512px;
+    margin: auto;
+    background: rgb(204,150,188);
+    background: linear-gradient(90deg, rgba(204,150,188,1) 45%, rgba(225,180,209,1) 60%, rgba(251,218,235,1) 75%, rgba(253,239,246,1) 85%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+}
+
+.text {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-sizing: border-box;
+    padding: 15px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fafafa;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    z-index: 1001;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+a:hover {
+    color:#FA50BC;
+}
+
+.circle {
+    float: left;
+    filter: blur(70px);
+}
+
+#circular-color-1 {
+    position: relative;
+    background-color: #76EDC9;
+    border-radius: 50%;
+    width: 390px;
+    height: 390px;
+    right: 180px;
+    bottom: 200px;
+    z-index: 1000;
+}
+
+#circular-color-2 {
+    position: relative;
+    background-color: #FBAC50;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    right: 15px;
+    bottom: 70px;
+    z-index: 1000;
+}
+
+#circular-color-3 {
+    position: relative;
+    background-color: #FA50BC;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    bottom: 17px;
+    right: 50px;
+    z-index: 999;
+}
+
+#circular-color-4 {
+    position: relative;
+    background-color: #F9E67A;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    right: 140px;
+    bottom: 100px;
+    z-index: 1000;
+}
+
+#circular-color-5 {
+    position: relative;
+    background-color: #BC66D3;
+    border-radius: 50%;
+    width: 390px;
+    height: 390px;
+    bottom: 500px;
+    left: 300px;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+.gradient-container {
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+}
+.text {
+    width: 80%;
+}
+}
